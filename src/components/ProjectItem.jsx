@@ -3,7 +3,7 @@ import React from 'react'
 function ProjectItem({ year, title, details, github, website }) {
   return (
     <ul className='flex flex-col md:flex-row relative border-1 border-stone-700 justify-center'>
-			<li className="mb-10 justify-center">
+			<li className="mb-10 justify-center" key={title}>
 					<div className='flex flex-wrap gap-4 flex-row items-center text-xs md:text-sm mb-4 justify-center'>
 						<span className='inline-block px-2 py-1 font-bold text-stone-900 bg-white rounded-md'>
 							{year}
@@ -20,11 +20,11 @@ function ProjectItem({ year, title, details, github, website }) {
               </div>
 						}
 					</div>
-					<p className='my-2 text-base font-normal text-stone-400 text-center'>
+					<div className='my-2 text-base font-normal text-stone-400 text-center'>
 						<ul>							
-							{details.map(item => { return <li>{item}</li> })}
+							{details.map(item=> { return <li key={item}>{item}</li> })}
 						</ul>
-					</p>
+					</div>
 				</li>
     </ul>
   )
