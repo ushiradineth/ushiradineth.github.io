@@ -8,6 +8,14 @@ function App() {
   if(search.split("?")[1] == "portfolio"){
     window.location.replace('https://todolist-production-35cc.up.railway.app/');
   }
+  
+  if(search.split("?")[1] == "todolist"){
+    window.location.replace('https://todolist-production-35cc.up.railway.app/');
+  }
+
+  if(search.split("?")[1] == "clonegram"){
+    window.location.replace('https://clonegram-ushiradineth.vercel.app/');
+  }
 
   return (
     <div className="App bg-[#121212]">

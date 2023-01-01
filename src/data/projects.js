@@ -1,23 +1,24 @@
-export default [
-    {
+export default [{
         year: '2022',
         title: 'Clonegram',
         details: [
-            'A website replicating Instagram built with TypeScript, NextJS, Tailwind, Prisma',
-            'Website hosted on Vercel and Database hosted on Railway'
+            'Made with NextJS, TypeScript, NextAuth, tRPC, Zod and TailwindCSS',
+            'Database and storage on Supabase',
+            'Hosted on Vercel'
         ],
         github: 'https://github.com/ushiradineth/clonegram',
-        website: 'https://github.com/ushiradineth/clonegram'
+        website: '/?clonegram',
     },
     {
         year: '2022',
         title: 'Todolist',
         details: [
             'A Todo list Web Application built with JavaScript, React, Tailwind, ExpressJS and MongoDB',
-            'Website hosted on Railway and Database hosted on MongoDB Atlas'
+            'Database on MongoDB Atlas',
+            'Hosted on Railway'
         ],
         github: 'https://github.com/ushiradineth/todolist',
-        website: 'https://todolist-production-35cc.up.railway.app/'
+        website: '/?todolist',
     },
     {
         year: '2022',
